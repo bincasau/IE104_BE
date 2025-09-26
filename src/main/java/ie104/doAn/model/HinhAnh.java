@@ -17,8 +17,9 @@ public class HinhAnh {
     @JoinColumn(name = "ma_tour", nullable = false)
     private Tour tour;
 
-    @Column(name = "ma_tin_tuc")
-    private int maTinTuc;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "ma_tin_tuc", nullable = false)
+    private TinTuc tinTuc;
 
     @Column(name = "la_icon")
     private boolean laIcon;
