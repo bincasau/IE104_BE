@@ -42,6 +42,9 @@ public class Tour {
     @Column(name = "gia_tour")
     private float giaTour;
 
+    @Column(name = "diem_khoi_hanh")
+    private String diemKhoiHanh;
+
     @OneToMany(mappedBy = "tour", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<HinhAnh> dsHinhAnh;
 }
