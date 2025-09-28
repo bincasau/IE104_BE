@@ -21,7 +21,7 @@ public class Tour {
     @Column(name = "dia_diem")
     private String diaDiem;
 
-    @Column(name = "mo_ta")
+    @Column(name = "mo_ta", columnDefinition = "LONGTEXT")
     private String moTa;
 
     @Column(name = "thong_tin_tour", columnDefinition = "LONGTEXT")

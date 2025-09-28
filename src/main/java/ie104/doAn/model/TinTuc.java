@@ -15,6 +15,9 @@ public class TinTuc {
     @Column(name = "ma_tin_tuc")
     private int maTinTuc;
 
+    @Column(name = "tieu_de")
+    private String tieuDe;
+
     @Column(name = "ngay_tao")
     private Date ngayTao;
 
