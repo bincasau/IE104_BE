@@ -10,4 +10,5 @@ import org.springframework.data.repository.query.Param;
 @RepositoryRestResource
 public interface TourRepo extends JpaRepository<Tour, Integer> {
     List<Tour> findByMien(@Param("mien") String mien);
+    List<Tour> findByDiaDiem(@Param("diaDiem") String diaDiem);
 }
